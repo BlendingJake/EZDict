@@ -1,3 +1,5 @@
+__all__ = ["EZDict"]
+
 
 class EZDict(dict):
     """

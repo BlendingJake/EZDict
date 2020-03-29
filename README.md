@@ -1,9 +1,29 @@
 # EZDict
-Making Python's `dict` easier to work with by adding object notation and easier grouping.
+
+Making Python's `dict` easier to work with by adding object notation and grouping.
+ 1. Allows keys to be accessed as attributes, so `ezdict.attr` can be used instead of 
+ `ezdict["attr"]`. Note, this only works with string keys. Additionally, any
+ keys that overlap with method names will be shadowed, so to access the key `keys`,
+ use `ezdict["keys"]` instead of `ezdict.keys`.
+ 2. Provide two methods, `incrementer` and `appender`, to support the common operations
+ of counting the occurrences of a key and grouping values by a key, respectively.
+
+## Installation
+
+```
+pip install ezdict
+```
+
+## Import
+
+```python
+from ezdict import EZDict
+```
 
 ## Usage
 
 ### Accessing Keys as Attributes
+
 ```python
 from ezdict import EZDict
 
